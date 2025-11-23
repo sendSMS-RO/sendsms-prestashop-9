@@ -15,7 +15,7 @@ Characteristics:
 * Easy to personalize
 * Order details: order number, order status
 * Extended settings 
-* Compatible with Prestashop 1.7.7
+* Compatible with Prestashop 9.x.x
 * Possibility to send a test SMS to any number (you have the possibility to preview the notification to be sent)
 * Ability to selectively send messages to any of the customers who have placed orders on your site.
 
