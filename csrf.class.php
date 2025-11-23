@@ -1,18 +1,4 @@
 <?php
-/**
- * NOTICE OF LICENSE
- *
- * This file is licenced under the Software License Agreement.
- * With the purchase or the installation of the software in your application
- * you accept the licence agreement.
- *
- *
- *  @author    Radu Vasile Catalin
- *  @copyright 2020-2020 Any Media Development
- *  @license   AFL
- */
-
-//adapted for presta 1.6 and 1.7
 class Csrf
 {
     private $cookie;
@@ -20,7 +6,7 @@ class Csrf
     {
         $this->cookie = Context::getContext()->cookie;
     }
-    //Link: https://www.wikihow.com/Prevent-Cross-Site-Request-Forgery-(CSRF)-Attacks-in-PHP
+    
     public function getTokenId()
     {
         if ($this->cookie->__isset('token_id')) {
@@ -54,21 +40,6 @@ class Csrf
         }
         return false;
     }
-
-    //No need for this
-    // public function form_names($names, $regenerate)
-    // {
-    //     $value = array();
-    //     foreach ($names as $n) {
-    //         if ($regenerate == true) {
-    //             unset($_SESSION[$n]);
-    //         }
-    //         $s = isset($_SESSION[$n]) ? $_SESSION[$n] : $this->random(10);
-    //         $_SESSION[$n] = $s;
-    //         $values[$n] = $s;
-    //     }
-    //     return $values;
-    // }
 
     public function random($len)
     {
