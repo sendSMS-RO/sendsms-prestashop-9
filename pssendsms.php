@@ -36,11 +36,11 @@ class PsSendSMS extends Module
 
         $this->name = 'pssendsms';
         $this->tab = 'advertising_marketing';
-        $this->version = '1.0.17';
+        $this->version = '1.1.0';
         $this->author = 'Any Place Media SRL';
         $this->module_key = '01417c91c848ebbc67f458d260e61f98';
         $this->need_instance = 0;
-        $this->ps_versions_compliancy = array('min' => '1.7.7', 'max' => '9.1.0');
+        $this->ps_versions_compliancy = array('min' => '9.0.0', 'max' => '9.1.0');
         $this->bootstrap = true;
 
         parent::__construct();
